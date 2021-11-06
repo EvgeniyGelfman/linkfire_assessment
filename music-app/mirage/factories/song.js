@@ -14,6 +14,7 @@ export default Factory.extend({
 
     afterCreate(song, server) {
         server.createList('artist',  getRandomQuantity(1, 5), { song });
+        server.create('genre');
       }
 
 });

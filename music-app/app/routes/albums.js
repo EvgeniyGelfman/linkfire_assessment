@@ -5,7 +5,9 @@ export default class AlbumsRoute extends Route {
     async model() {
       return RSVP.hash({
         albums: this.store.findAll('album'),
-        songs: this.store.findAll('song')
+        songs: this.store.findAll('song'),
+        genres: this.store.findAll('genre'),
+        artists: this.store.findAll('artist')
       });
     }
   }

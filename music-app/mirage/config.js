@@ -27,4 +27,6 @@ export default function() {
     this.get('/', 'albums')
     this.get('/albums');
     this.get('/songs');
+    this.get('/genres');
+    this.get('/artists');
 }
