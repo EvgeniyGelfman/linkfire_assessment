@@ -7,7 +7,7 @@
   <ul class="albums__results">
     <Albums::Filter @albums={{@model.albums}} @query={{this.query}} as |results|>
       {{#each results as |album|}}
-      album
+        <li><Album @album={{album}} /></li>
       {{/each}}
     </Albums::Filter>
   </ul>

@@ -24,5 +24,7 @@ export default function() {
     https://www.ember-cli-mirage.com/docs/route-handlers/shorthands
   */
 
-    this.get('albums');
+    this.get('/', 'albums')
+    this.get('/albums');
+    this.get('/songs');
 }
