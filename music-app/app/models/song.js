@@ -1,5 +1,8 @@
-import Model from '@ember-data/model';
+import Model, {belongsTo, attr, hasMany} from '@ember-data/model';
 
-export default Model.extend({
-
-});
+export default class SongModel extends  Model{
+    @attr name;
+    @hasMany artist;
+    @belongsTo genre;
+    @belongsTo album;
+}
