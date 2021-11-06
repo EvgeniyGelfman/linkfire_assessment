@@ -1,7 +1,7 @@
 import { Factory, association } from 'ember-cli-mirage';
 import faker from 'faker';
 
-import {getRandomQuantity} from '../../app/helpers/lib/get-random-quantity';
+import {getRandomQuantity} from '../lib/get-random-quantity';
 
 export default Factory.extend({
     name() {
