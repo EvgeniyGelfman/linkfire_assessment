@@ -5,11 +5,10 @@ import {getRandomQuantity} from '../../app/helpers/lib/get-random-quantity';
 
 export default Factory.extend({
     name() {
-        return faker.random.word();
+        return faker.music.genre()
     },
 
-    afterCreate(album, server) {
-        server.createList('song',  getRandomQuantity(3, 10), { album });
-      }
-
+    afterCreate(genre, server) {
+        server.createList('song', getRandomQuantity(3, 10), genre);
+    }
 });

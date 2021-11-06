@@ -1,9 +1,7 @@
 import { Factory, association } from 'ember-cli-mirage';
 import faker from 'faker';
 
-let minArt = 1;
-let maxArt = 5;
-let artQuantity = () => Math.floor(Math.random() * (maxArt - minArt + 1)) + minArt;
+import {getRandomQuantity} from '../../app/helpers/lib/get-random-quantity';
 
 export default Factory.extend({
     name() {
@@ -15,7 +13,7 @@ export default Factory.extend({
     genre: association(),
 
     afterCreate(song, server) {
-        server.createList('artist',  artQuantity(), { song });
+        server.createList('artist',  getRandomQuantity(1, 5), { song });
       }
 
 });
