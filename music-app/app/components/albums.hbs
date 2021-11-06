@@ -1,0 +1,15 @@
+<div class="albums">
+  <label for="albums--filter">
+    <span>Search for album</span>
+    <Input @value={{this.query}} class="albums--filter" id="albums--filter"/>
+  </label>
+
+  <ul class="albums__results">
+    <Albums::Filter @albums={{@model.albums}} @query={{this.query}} as |results|>
+      {{#each results as |album|}}
+      album
+      {{/each}}
+    </Albums::Filter>
+  </ul>
+
+</div>

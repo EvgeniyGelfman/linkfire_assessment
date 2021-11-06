@@ -24,5 +24,5 @@ export default function() {
     https://www.ember-cli-mirage.com/docs/route-handlers/shorthands
   */
 
-    this.get('/music-list', 'albums');
+    this.get('albums');
 }

@@ -10,6 +10,6 @@ export default Factory.extend({
 
     afterCreate(album, server) {
         server.createList('song',  getRandomQuantity(3, 10), { album });
-      }
+    }
 
 });

@@ -6,5 +6,5 @@ export default Factory.extend({
         return faker.name.firstName() + ' ' + faker.name.lastName()
     },
 
-    // song: association()
+    song: association()
 });
