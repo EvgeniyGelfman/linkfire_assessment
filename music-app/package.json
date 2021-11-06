@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "@ember/optional-features": "^1.0.0",
+    "@glimmer/component": "^1.0.4",
+    "@glimmer/tracking": "^1.0.4",
     "babel-eslint": "^10.0.3",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.5.2",
@@ -46,7 +48,8 @@
     "eslint-plugin-node": "^10.0.0",
     "loader.js": "^4.7.0",
     "qunit-dom": "^0.9.0",
-    "sass": "^1.23.7"
+    "sass": "^1.23.7",
+    "faker": "^5.5.3"
   },
   "engines": {
     "node": "8.* || >= 10.*"
