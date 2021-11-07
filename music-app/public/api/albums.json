@@ -1,0 +1,33 @@
+{
+    "data": [
+      {
+        "type": "album",
+        "id": "Great album num 1",
+        "attributes": {
+          "name": "Great album num 1",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
+        },
+        "hasMany": [
+            {
+                "type": "song",
+                "id": "song num 1"
+            }
+        ]
+      },
+      {
+        "type": "album",
+        "id": "Great album num 2",
+        "attributes": {
+          "name": "Great album num 2",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
+        },
+        "hasMany": [
+            {
+                "type": "song",
+                "id": "song num 1"
+            }
+        ]
+      }
+      
+    ]
+  }
